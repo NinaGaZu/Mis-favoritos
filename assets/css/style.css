@@ -130,8 +130,8 @@ h2 {
   display: flex;
   justify-content: space-around; /* Espacio entre las tarjetas */
   flex-wrap: wrap; /* Permite que las tarjetas se acomoden en la siguiente fila si no caben */
-  gap: 20px; /* Espacio entre las tarjetas */
-  padding: 20px;
+  gap: 25px; /* Espacio entre las tarjetas */
+  padding: 10px;
 }
 
 .flip-card {
@@ -165,7 +165,7 @@ h2 {
   background-color: var(--color-background-nav-card-footer);
   color: var(--color-nav-p-footer);
   transform: rotateY(180deg);
-  padding: 20px; /* Espacio entre el contenido y el borde */
+  padding: 10px; /* Espacio entre el contenido y el borde */
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
 }
 
