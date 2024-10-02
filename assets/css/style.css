@@ -1,16 +1,51 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+:root {
+  --color-link: #000000;
+  --color-background-nav: #8a579e;
+  --color-background-main: #5B2C6F;
+  --color-h1-h2:#bcbcbc;
+  --color-nav-p: #FFFFFF;
+  --font-h1: "Edu AU VIC WA NT Guides", cursive;
+  --font-nav: "Caveat", cursive;
+  --font-p: "Dancing Script", cursive;
+  --font-h2: "Kalam", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Estilos globales */
 body {
   font-family: Arial, sans-serif;
+  font-size:x-large;
+}
+
+header {
+  height: auto;
+  background-color: var(--color-background-nav);
+  padding-bottom: 15px;
 }
 
 /* Estilos para el nav */
 h1 {
+  margin-top: 0;
+  padding-top: 20px;
+  font-family: var(--font-h1);
   text-align: center;
+  color: var(--color-h1-h2);
 }
 
 nav ul {
@@ -27,9 +62,8 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 10px;
-  /* background-color: #333; */
-  /* color: white; */
   text-decoration: none;
+  color: var(--color-nav-p);
 }
 
 nav ul li ul {
@@ -37,7 +71,6 @@ nav ul li ul {
   position: absolute;
   top: 100%;
   left: 0;
-  /* background-color: #333; */
 }
 
 nav ul li:hover ul {
@@ -47,32 +80,50 @@ nav ul li:hover ul {
 nav ul li ul li {
   display: block;
 }
-
+.nav {
+  font-family: var(--font-nav);
+}
 .sub-submenu {
   display: none;
 }
 
 /* Estilos para el main*/
 /* Index */
+main {
+  padding: 50px;
+  background-color: var(--color-background-main);
+  color: var(--color-nav-p);
+}
 .container {
-  margin: 100px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.container__index {
+  display: flex;
+  flex-direction: column;
+}
+.container__imagen {
+  align-self: center;
+  width: 350px;
+  border-radius: 10%;
 }
 
 .container p {
   text-align: justify;
-  
+  font-family: var(--font-p);
+  font-size: xx-large;  
 }
 
-.container img {
-  margin-left: 20px;
-  width: 500px;
-  align-content: center;
-}
 /* Cards */
+h2 {
+  text-align: center;
+  font-family: var(--font-h2);
+  color: var(--color-h1-h2);
+}
+
 #flip-card-container {
   display: flex;
   justify-content: space-around; /* Espacio entre las tarjetas */
@@ -126,23 +177,89 @@ nav ul li ul li {
 }
 
 /* Estilos para el footer */
-footer {
-  background-color: #333;
-  color: white;
+.footer {
+  background-color:var(--color-background-nav);
+  color: var(--color-de-footer-letra);
+  padding: 10px 10px;
   text-align: center;
-  padding: 10px;
-}
-footer li {
-  list-style-type: none;
 }
 
-footer a {
+.footer__contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer__titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__descripcion {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-de-borde);
+}
+
+.footer__contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__contacto__titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer__contacto__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__contacto__item {
+  color: var(--color-de-contacto-boton);
   text-decoration: none;
-  color: #eee;
-}
-a:hover {
-  text-decoration: underline;
+  transition: color 0.3s;
 }
 
-  
+.footer__contacto__item:hover {
+  color: var(--color-de-footer-hover);
+}
+
+.footer__copyright {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--color-de-copyright);
+}
+
+@media(min-width: 768px) {
+
+  .container__index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+
+  .container__imagen {
+    align-self: center;
+  }
+
+}  
+
+@media(min-width: 1024px) {
+
+  .container__imagen {
+    height: 500px;
+    width: auto;
+  }
+}
   
