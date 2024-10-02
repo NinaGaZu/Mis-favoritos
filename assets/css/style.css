@@ -5,14 +5,14 @@
 
 :root {
   --color-link: #000000;
-  --color-background-nav: #8a579e;
+  --color-background-nav-card-footer: #8a579e;
   --color-background-main: #5B2C6F;
-  --color-h1-h2:#bcbcbc;
-  --color-nav-p: #FFFFFF;
-  --font-h1: "Edu AU VIC WA NT Guides", cursive;
-  --font-nav: "Caveat", cursive;
+  --color-h1-h2-h3-hover:#bcbcbc;
+  --color-nav-p-footer: #FFFFFF;
+  --font-nav: "Edu AU VIC WA NT Guides", cursive;
+  --font-h1: "Caveat", cursive;
   --font-p: "Dancing Script", cursive;
-  --font-h2: "Kalam", cursive;
+  --font-h2-h3: "Kalam", cursive;
 }
 
 *,
@@ -29,13 +29,12 @@ body, html {
 
 /* Estilos globales */
 body {
-  font-family: Arial, sans-serif;
-  font-size:x-large;
+  font-family: var(--font-h2-h3);
 }
 
 header {
   height: auto;
-  background-color: var(--color-background-nav);
+  background-color: var(--color-background-nav-card-footer);
   padding-bottom: 15px;
 }
 
@@ -45,7 +44,8 @@ h1 {
   padding-top: 20px;
   font-family: var(--font-h1);
   text-align: center;
-  color: var(--color-h1-h2);
+  color: var(--color-h1-h2-h3-hover);
+  font-size:xx-large
 }
 
 nav ul {
@@ -63,7 +63,7 @@ nav ul li a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: var(--color-nav-p);
+  color: var(--color-nav-p-footer);
 }
 
 nav ul li ul {
@@ -92,7 +92,7 @@ nav ul li ul li {
 main {
   padding: 50px;
   background-color: var(--color-background-main);
-  color: var(--color-nav-p);
+  color: var(--color-nav-p-footer);
 }
 .container {
   padding: 20px;
@@ -114,14 +114,16 @@ main {
 .container p {
   text-align: justify;
   font-family: var(--font-p);
-  font-size: xx-large;  
+  font-size: x-large;  
+  font-style:oblique;
 }
 
 /* Cards */
 h2 {
   text-align: center;
-  font-family: var(--font-h2);
-  color: var(--color-h1-h2);
+  font-family: var(--font-h2-h3);
+  color: var(--color-h1-h2-h3-hover);
+  font-size: x-large;
 }
 
 #flip-card-container {
@@ -157,11 +159,11 @@ h2 {
 }
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  /* color: black; */
 }
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: var(--color-background-nav-card-footer);
+  color: var(--color-nav-p-footer);
   transform: rotateY(180deg);
   padding: 20px; /* Espacio entre el contenido y el borde */
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
@@ -178,37 +180,40 @@ h2 {
 
 /* Estilos para el footer */
 .footer {
-  background-color:var(--color-background-nav);
-  color: var(--color-de-footer-letra);
-  padding: 10px 10px;
+  background-color:var(--color-background-nav-card-footer);
+  /* color: var(--color-nav-p-footer); */
+  padding: 5px 5px;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly
+;
 }
 
 .footer__contenedor {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 400px;
+  gap: 10px;
+  max-width: 300px;
   margin: 0 auto;
   align-items: center;
 }
 
 .footer__titulo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer__descripcion {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  color: var(--color-de-borde);
+  color: var(--color-nav-p-footer);
 }
 
 .footer__contacto {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .footer__contacto__titulo {
@@ -221,23 +226,29 @@ h2 {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .footer__contacto__item {
-  color: var(--color-de-contacto-boton);
+  color: var(--color-nav-p-footer);
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 0.9rem;
 }
 
 .footer__contacto__item:hover {
-  color: var(--color-de-footer-hover);
+  color: var(--color-h1-h2-h3-hover);
 }
 
 .footer__copyright {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 0.8rem;
-  color: var(--color-de-copyright);
+  color: var(--color-h1-h2-h3-hover);
+}
+h3 {
+  font-family: var(--font-h2-h3);
+  color: var(--color-h1-h2-h3-hover);
+ 
 }
 
 @media(min-width: 768px) {
