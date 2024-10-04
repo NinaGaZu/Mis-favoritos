@@ -15,7 +15,7 @@ function createFlipCard(imageSrc, name, description) {
   const img = document.createElement('img');
   img.src = imageSrc;
   img.alt = name;
-  img.style.width = '300px';
+  img.style.width = '280px';
   img.style.height = '300px';
   flipCardFront.appendChild(img);
 

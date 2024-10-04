@@ -29,5 +29,10 @@ const cardData = [
     imageSrc: '/assets/img/anime/haikyuu.jpg',
     name: 'Haikyuu!!',
     description: 'Haikyuu!! sigue a Shoyo Hinata, un joven apasionado por el voleibol, que se une al equipo de su escuela secundaria para superar sus limitaciones de altura y convertirse en un gran jugador. Junto a su rival y compañero Tobio Kageyama, lucha por llevar a su equipo a la cima.'
+},
+{
+    imageSrc: '/assets/img/anime/assassination classroom.jpeg',
+    name: 'Assassination Classroom',
+    description: 'Koro-sensei, un maestro con apariencia de pulpo que amenaza con destruir la Tierra. Sus estudiantes deben asesinarlo antes de que lo haga, mientras él les enseña valiosas lecciones de vida.'
 }
 ];

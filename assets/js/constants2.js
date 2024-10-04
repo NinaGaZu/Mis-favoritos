@@ -29,5 +29,15 @@ const cardData = [
     imageSrc: '/assets/img/libros/El juego de Ender.jpg',
     name: 'El juego de Ender',
     description: 'Sigue a Ender Wiggin, un niño prodigio que es entrenado por la Flota Internacional para liderar la defensa de la Tierra contra una invasión alienígena. A través de simulaciones y batallas, Ender debe superar desafíos estratégicos y morales para salvar a la humanidad.'
+},
+{
+    imageSrc: '/assets/img/libros/heaven official.jpg',
+    name: 'Heaven Official’s Blessing',
+    description: 'Xie Lian, un príncipe que asciende a los cielos por tercera vez tras 800 años de infortunios. En su nueva vida celestial, se encuentra con un misterioso fantasma que gobierna el purgatorio.'
+},
+{
+    imageSrc: '/assets/img/libros/mo-dao-zu-shi.jpg',
+    name: 'Mo Dao Zu Shi',
+    description: 'Sigue a Wei Wuxian, el fundador del cultivo demoníaco, quien tras ser asesinado, es revivido y se reencuentra con su antiguo rival, Lan Wangji. Juntos, desentrañan misterios y enfrentan peligros en un mundo lleno de cultivadores y sectas.'
 }
 ];

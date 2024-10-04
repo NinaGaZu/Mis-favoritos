@@ -21,18 +21,13 @@ const cardData = [
       description: 'Historia entre una gyaru y su compañera de clase a quien confunde con un chico fuera de la escuela, uniéndose por su amor mutuo por el rock.'
   },
   {
-      imageSrc: '/assets/img/comic/manga',
-      name: 'Alice Johnson',
-      description: 'Loves to code'
+      imageSrc: '/assets/img/comic/manga/Yamada kun.jpeg',
+      name: 'Yamada-kun to Lv999',
+      description: 'Akane, una universitaria que, tras ser dejada por su novio, encuentra consuelo en un MMORPG. Allí conoce a Yamada, un jugador apático pero talentoso, y su relación comienza a desarrollarse en el juego y en la vida real.'
   },
   {
-      imageSrc: '/assets/img/comic/manga',
-      name: 'Jane Smith',
-      description: 'Creativity is her passion'
-  },
-  {
-      imageSrc: '/assets/img/comic/manga',
-      name: 'Alice Johnson',
-      description: 'Loves to code'
+      imageSrc: '/assets/img/comic/manga/Kirai de Isasete.jpeg',
+      name: 'Kirai de Isasete',
+      description: 'Koga Naoto, un omega que, tras una traumática experiencia con alfas, decide criar solo a su hija. A pesar de su odio hacia los alfas, su vida cambia cuando conoce a alguien que desafía sus prejuicios.'
   }
 ];
