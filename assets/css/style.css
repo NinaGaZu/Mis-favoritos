@@ -4,11 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 :root {
-  --color-link: #000000;
-  --color-background-nav-card-footer: #8a579e;
-  --color-background-main: #5B2C6F;
-  --color-h1-h2-h3-hover:#bcbcbc;
-  --color-nav-p-footer: #FFFFFF;
+  --color-background-nav-card-footer: #7E60BF;
+  --color-background-main: #433878;
+  --color-h1-h2-h3-hover:#E4B1F0;
+  --color-nav-p-footer: #FFE1FF;
   --font-nav: "Edu AU VIC WA NT Guides", cursive;
   --font-h1: "Caveat", cursive;
   --font-p: "Dancing Script", cursive;
@@ -159,7 +158,6 @@ h2 {
 }
 .flip-card-front {
   background-color: #bbb;
-  /* color: black; */
 }
 .flip-card-back {
   background-color: var(--color-background-nav-card-footer);
@@ -181,7 +179,6 @@ h2 {
 /* Estilos para el footer */
 .footer {
   background-color:var(--color-background-nav-card-footer);
-  /* color: var(--color-nav-p-footer); */
   padding: 5px 5px;
   text-align: center;
   display: flex;
