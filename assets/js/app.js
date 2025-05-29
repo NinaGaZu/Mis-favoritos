@@ -1,11 +1,17 @@
 
 const links = document.querySelectorAll('.nav');
-const current = location.pathname.split("/").pop() || "index.html";
-links.forEach(link => {
-  if (link.getAttribute("href") === current) {
-    link.classList.add("active");
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav a.nav");
+  const currentPage = location.pathname.split("/").pop(); // ej: anime.html
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href === currentPage) {
+      link.classList.add("active");
+    }
+  });
 });
+
 
 /*Menú sandwich*/
 function toggleMenu() {

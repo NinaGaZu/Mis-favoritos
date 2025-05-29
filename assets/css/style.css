@@ -80,7 +80,7 @@ nav ul li ul li {
   display: block;
 }
 
-.nav.active {
+nav a.active {
   color: #f39c12;
   font-weight: bold;
   border-bottom: 2px solid #f39c12;
@@ -275,7 +275,11 @@ h3 {
 }
 
 @media(min-width: 768px) {
-
+  
+  /* Ocultar en pantallas grandes */
+  .menu-toggle {
+    display: none;
+  }
   .container__index {
     display: flex;
     flex-direction: row;
