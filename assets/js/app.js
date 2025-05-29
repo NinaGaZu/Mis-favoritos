@@ -1,6 +1,16 @@
 
+const links = document.querySelectorAll('.nav');
+const current = location.pathname.split("/").pop() || "index.html";
+links.forEach(link => {
+  if (link.getAttribute("href") === current) {
+    link.classList.add("active");
+  }
+});
 
-
+/*Menú sandwich*/
+function toggleMenu() {
+  document.querySelector("nav ul").classList.toggle("show");
+}
 
 /* Menú desplegable */
 function toggleSubmenu(event, submenuId) {
@@ -15,9 +25,11 @@ function toggleSubmenu(event, submenuId) {
 
 /* Genera las Cards */
 document.addEventListener('DOMContentLoaded', () => {
-  cardData.forEach(card => {
-    createFlipCard(card.imageSrc, card.name, card.description);
-  });
+  if (typeof cardData !== "undefined") {
+    cardData.forEach(card => {
+      createFlipCard(card.imageSrc, card.name, card.description);
+    });
+  }
 });
 
 

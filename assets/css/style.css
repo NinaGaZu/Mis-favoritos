@@ -79,6 +79,13 @@ nav ul li:hover ul {
 nav ul li ul li {
   display: block;
 }
+
+.nav.active {
+  color: #f39c12;
+  font-weight: bold;
+  border-bottom: 2px solid #f39c12;
+}
+
 .nav {
   font-family: var(--font-nav);
 }
@@ -246,6 +253,25 @@ h3 {
   font-family: var(--font-h2-h3);
   color: var(--color-h1-h2-h3-hover);
  
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-nav-p-footer);
+    font-size: 1.5rem;
+    margin: 10px;
+  }
 }
 
 @media(min-width: 768px) {
